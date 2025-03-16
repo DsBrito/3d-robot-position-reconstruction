@@ -48,16 +48,7 @@ print_camera_parameters(K1, R1, T1, resolucao1, distorcao1, 1)
 print_camera_parameters(K2, R2, T2, resolucao2, distorcao2, 2)
 print_camera_parameters(K3, R3, T3, resolucao3, distorcao3, 3)
 print("[LOG]: Parametros das cameras carregados com sucesso")
-
-
-# print('##########################################################################################################################')
-# print("[LOG]: Lendo os arquivos de video")
-# read_video0 = "./assets/video/camera-00.mp4"
-# read_video1 = "./assets/video/camera-01.mp4"
-# read_video2 = "./assets/video/camera-02.mp4"
-# read_video3 = "./assets/video/camera-03.mp4"
-# print("[LOG]: Arquivos de video lidos com sucesso")
-
+s
 
 print('##########################################################################################################################')
 print("[LOG]: Lendo os arquivos de video")
