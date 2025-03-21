@@ -48,7 +48,7 @@ print_camera_parameters(K1, R1, T1, resolucao1, distorcao1, 1)
 print_camera_parameters(K2, R2, T2, resolucao2, distorcao2, 2)
 print_camera_parameters(K3, R3, T3, resolucao3, distorcao3, 3)
 print("[LOG]: Parametros das cameras carregados com sucesso")
-s
+
 
 print('##########################################################################################################################')
 print("[LOG]: Lendo os arquivos de video")
@@ -308,13 +308,13 @@ ax2 = fig.add_subplot(122)
 print("[LOG]: Plotando a rota do robo")
 
 r1 = ax1.scatter(xs = coordinates_x[0], ys = coordinates_y[0], zs = coordinates_z[0], 
-                c = "yellow", label = 'Início da Rota', s = 600, marker= "^")  
+                c = "#32CD32", label = 'Início da Rota', s = 600, marker= "o")  
 r2 = ax1.scatter(xs = coordinates_x[1:], ys = coordinates_y[1:], zs = coordinates_z[1:], 
-                c = "black", label = 'Rota Robo')
+                c = "grey", label = 'Rota Robo')
 r3 = ax1.scatter(xs = coordinates_x[-1], ys = coordinates_y[-1], zs = coordinates_z[-1], 
-                c = "red", label = 'Fim da Rota', s = 600, marker= "^")  
-legend_start = Line2D([0], [0], marker='^', color='w', markerfacecolor='yellow', markersize=10, label='Início da Rota')
-legend_end = Line2D([0], [0], marker='^', color='w', markerfacecolor='red', markersize=10, label='Fim da Rota')
+                c = "red", label = 'Fim da Rota', s = 600, marker= "o")  
+legend_start = Line2D([0], [0], marker='o', color='w', markerfacecolor='#32CD32', markersize=10, label='Início da Rota')
+legend_end = Line2D([0], [0], marker='o', color='w', markerfacecolor='red', markersize=10, label='Fim da Rota')
 
 # Adicionando à legenda
 ax1.legend(handles=[legend_start, legend_end, r2])
@@ -328,9 +328,9 @@ ax1.view_init(elev=35,azim=-90)
 ax1.set_title("Reconstrucao do Movimento do Robô Móvel")
 
 print("[LOG]: Plotando as cameras que identificaram o robo")
-c1 = ax2.scatter(x = cx_2cam, y = cy_2cam,  c = "red",label = 'Movimento identificado por duas cameras')
-c2 = ax2.scatter(x = cx_3cam, y = cy_3cam,  c = "green",label = 'Movimento identificado por três cameras')
-c3 = ax2.scatter(x = cx_4cam, y = cy_4cam,  c = "blue",label = 'Movimento identificado por quatro cameras')
+c1 = ax2.scatter(x = cx_2cam, y = cy_2cam,  c = "purple",label = 'Movimento identificado por duas cameras')
+c2 = ax2.scatter(x = cx_3cam, y = cy_3cam,  c = "pink",label = 'Movimento identificado por três cameras')
+c3 = ax2.scatter(x = cx_4cam, y = cy_4cam,  c = "cyan",label = 'Movimento identificado por quatro cameras')
 ax2.legend()
 ax2.grid(True)
 ax2.set_xlabel("X (m)")
