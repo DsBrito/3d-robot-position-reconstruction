@@ -59,13 +59,27 @@ pip install opencv-python numpy matplotlib
 
 ## 🚀 Como Executar
 
+```bash
 python python .\main.py
-
 ```
+
+## ✔️ Resultado
+
+### 4 câmeras
+
+<div style="display: inline_block" align="center">
+<img src="./assets/img/4-cam.png" alt="result-1" width="80%"/>
+
+### Modelo 3d e 2d do movimento do robô/ aruco
+
+<div style="display: inline_block" align="center">
+<img src="./assets/img/3d-form.png" alt="result-2" width="40%"/>
+<img src="./assets/img/infinite-2d.png" alt="result-2" width="40%"/>
+</div>
+  </div>
 
 ## 📌 Observações Importantes
 
 - Apenas o **marcador de ID = 0** deve ser considerado.
 - As matrizes extrínsecas fornecidas nos arquivos `.json` **devem ser invertidas** antes do uso.
 - Os vídeos das câmeras estão **sincronizados** para garantir a consistência da reconstrução.
-```
