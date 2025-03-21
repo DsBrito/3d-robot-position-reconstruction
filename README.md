@@ -78,8 +78,3 @@ python python .\main.py
 </div>
   </div>
 
-## 📌 Observações Importantes
-
-- Apenas o **marcador de ID = 0** deve ser considerado.
-- As matrizes extrínsecas fornecidas nos arquivos `.json` **devem ser invertidas** antes do uso.
-- Os vídeos das câmeras estão **sincronizados** para garantir a consistência da reconstrução.
